@@ -1,0 +1,6 @@
+Questions for Part3aExplanation.txt:
+
+(1) During the lab when the created code was compiled with no compile time option it failed since gcc has stack protection as a default and thus the program does not execute the stack. 
+(2) Once stack protection is deactivated the first protection is then disabled but I was given a segmentation fault. 
+(3) With an executable stack since the stack is executable but stack protection is still enabled the program will not launch a shell. 
+(4) With both an executable stack and stack protection turned off there is no active defense measures in place, thus the stack is executable and there is not protection is place to stop it. 

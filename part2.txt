@@ -1,0 +1,76 @@
+Script started on Mon 02 Apr 2018 12:34:11 PM EDT
+]0;kkimbel@js-156-147: ~kkimbel@js-156-147:~$ as /home/kkimbel/Desktop/part2.s -o /home/kkimbel/Desktop/ part2.s[Ko
+]0;kkimbel@js-156-147: ~kkimbel@js-156-147:~$ ld /home/kkimbel/Desktop/part2.o -0[Ko /home/kkimbel/Desktop/ part2.o[K[K
+]0;kkimbel@js-156-147: ~kkimbel@js-156-147:~$ ce[Kd /home/kkimbel/Desktop/part2.o[K[K[K[K[K[K[K
+]0;kkimbel@js-156-147: ~/Desktopkkimbel@js-156-147:~/Desktop$ ls
+[0m[01;32mBufferRedirectViaStack64.c[0m  [01;32mNotes:[0m   [01;32mpart2.s[0m           [01;34mUpdated Submission[0m
+[01;32mchangeres.desktop[0m           [01;32mpart2[0m    [01;34mPlanning Teplate[0m
+[01;34mFinished[0m                    part2.o  screen.log
+]0;kkimbel@js-156-147: ~/Desktopkkimbel@js-156-147:~/Desktop$ ./[K[Kpart2
+No command 'part2' found, did you mean:
+ Command 'par2' from package 'par2' (universe)
+ Command 'partx' from package 'util-linux' (main)
+part2: command not found
+]0;kkimbel@js-156-147: ~/Desktopkkimbel@js-156-147:~/Desktop$ ./part2
+$ 
+$ exit
+]0;kkimbel@js-156-147: ~/Desktopkkimbel@js-156-147:~/Desktop$ gdb ./[K[Kpart2
+GNU gdb (Ubuntu 7.7.1-0ubuntu5~14.04.3) 7.7.1
+Copyright (C) 2014 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from part2...(no debugging symbols found)...done.
+(gdb) start
+Function "main" not defined.
+Make breakpoint pending on future shared library load? (y or [n]) n
+
+Starting program: /home/kkimbel/Desktop/part2 
+process 12148 is executing new program: /bin/dash
+$ objdump -d part2     /home/kkimbel/Desktop/part2
+
+/home/kkimbel/Desktop/part2:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000400078 <_start>:
+  400078:	48 31 f6             	xor    %rsi,%rsi
+  40007b:	48 31 d2             	xor    %rdx,%rdx
+  40007e:	48 bb 2f 62 69 6e 2f 	movabs $0x1168732f6e69622f,%rbx
+  400085:	73 68 11 
+  400088:	48 c1 e3 08          	shl    $0x8,%rbx
+  40008c:	48 c1 eb 08          	shr    $0x8,%rbx
+  400090:	53                   	push   %rbx
+  400091:	48 31 c0             	xor    %rax,%rax
+  400094:	b0 3b                	mov    $0x3b,%al
+  400096:	48 89 e7             	mov    %rsp,%rdi
+  400099:	0f 05                	syscall 
+$ dg  gdb     exit
+[Inferior 1 (process 12148) exited normally]
+(gdb) start
+Function "main" not defined.
+Make breakpoint pending on future shared library load? (y or [n]) y
+
+Temporary breakpoint 1 (main) pending.
+Starting program: /bin/dash 
+$ exit
+[Inferior 1 (process 12284) exited normally]
+(gdb) dia[Ksase[Ksemble start
+No symbol "start" in current context.
+(gdb) c[Kexit
+Undefined command: "exit".  Try "help".
+(gdb) quit
+]0;kkimbel@js-156-147: ~/Desktopkkimbel@js-156-147:~/Desktop$ exit
+exit
+
+Script done on Mon 02 Apr 2018 12:38:22 PM EDT

@@ -1,0 +1,23 @@
+Script started on Thu 29 Mar 2018 08:04:11 PM EDT
+]0;kkimbel@js-156-147: ~/Desktopkkimbel@js-156-147:~/Desktop$ as gcc /home/kkimbel/Desktop/Part3b.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[Kas /home/kkimbel/Desktop/Part3b.c gcc -o /home/kkimmbel/Desktop/Part3b[A]0;kkimbel@js-156-147: ~/Desktopkkimbel@js-156-147:~/Desktop$ [11Pscript /home/kkimbel/Desktop/screen.log
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cas /home/kkimbel/Desktop/Part3b.c gcc -o /home/kkimmbel/Desktop/Part3b[A]0;kkimbel@js-156-147: ~/Desktopkkimbel@js-156-147:~/Desktop$ clear[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cas gcc /home/kkimbel/Desktop/Part3b.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kas gcc /home/kkimbel/Desktop/Part3b.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[Kas /home/kkimbel/Desktop/Part3b.c gcc -o /home/kkimmbel/Desktop/Part3b[A]0;kkimbel@js-156-147: ~/Desktopkkimbel@js-156-147:~/Desktop$ [11Pscript /home/kkimbel/Desktop/screen.log
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[Kscript /home/kkimbel/Desktop/screen.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[Kgcc /home/kkimbel/Desktop/Part3a.c -o /home/kkimbell/Desktop/Part3a[A]0;kkimbel@js-156-147: ~/Desktopkkimbel@js-156-147:~/Desktop$ clear[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cscript /home/kkimbel/Desktop/screen.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[Kscript /home/kkimbel/Desktop/screen.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cas /home/kkimbel/Desktop/Part3b.c gcc -o /home/kkimmbel/Desktop/Part3b[A]0;kkimbel@js-156-147: ~/Desktopkkimbel@js-156-147:~/Desktop$ clear[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cas gcc /home/kkimbel/Desktop/Part3b.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kas /home/kkimbel/Desktop/part1.s -o /home/kkimbel/ Desktop/part1.s[Ko
+]0;kkimbel@js-156-147: ~/Desktopkkimbel@js-156-147:~/Desktop$ ld /home/kkimbel/Desktop/part1.o -o /home/kkimbel/ Desktop/part1.o[K[K
+]0;kkimbel@js-156-147: ~/Desktopkkimbel@js-156-147:~/Desktop$ ce [K[Kd /home/kkimbel/Desktop/part1[K[K[K[K[K
+]0;kkimbel@js-156-147: ~/Desktopkkimbel@js-156-147:~/Desktop$ ld
+ld: no input files
+]0;kkimbel@js-156-147: ~/Desktopkkimbel@js-156-147:~/Desktop$ ls
+[0m[01;32mBufferRedirectViaStack64.c[0m  [01;32mNotes:[0m   [01;32mpart1.s[0m           [01;34mUpdated Submission[0m
+[01;32mchangeres.desktop[0m           [01;32mpart1[0m    [01;34mPlanning Teplate[0m
+[01;34mFinished[0m                    part1.o  screen.log
+]0;kkimbel@js-156-147: ~/Desktopkkimbel@js-156-147:~/Desktop$ ./part1
+$ 
+$ 
+$ exit
+]0;kkimbel@js-156-147: ~/Desktopkkimbel@js-156-147:~/Desktop$ exit
+exit
+
+Script done on Thu 29 Mar 2018 08:06:11 PM EDT

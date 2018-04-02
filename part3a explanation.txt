@@ -1,0 +1,25 @@
+Part3aExplanation to the question: When you execute the program, the code should result in a shell being opened. 
+Now comment out the line of code mprotect and compile and execute the code again. 
+What happens? Look up the mprotect command online, and explain the difference between the two pieces of code. 
+
+Essentially, 'mprotect' protects establishes permissions in memory pages in within the interval of the parameters provided to it.
+If any of the permission that is set is violated then it generates a SIGSEGV signal for the process. See below for official notes:
+
+On Linux, it is always permissible to call mprotect() on any address
+       in a process's address space (except for the kernel vsyscall area).
+       In particular, it can be used to change existing code mappings to be
+       writable.
+
+       Whether PROT_EXEC has any effect different from PROT_READ depends on
+       processor architecture, kernel version, and process state.  If
+       READ_IMPLIES_EXEC is set in the process's personality flags (see
+       personality(2)), specifying PROT_READ will implicitly add PROT_EXEC.
+
+Part 2: compiled with mprotect: in this situation since the code was compiled properly with mprotect it worked 
+since PROC_EXEC was set (see above). 
+
+Part 3: compiled without mprotect: since there was no use of mprotect when compiled PROC_EXEC was not properly established 
+and upon execution the program failed since there was a violated permission.  
+
+
+ 
